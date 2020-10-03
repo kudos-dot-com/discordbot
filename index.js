@@ -25,7 +25,7 @@ client.on('ready', () => {
   .substring(1,8)
   .toLowerCase()==='weather')
   {       
-   requests(`http://api.openweathermap.org/data/2.5/weather?q=${message.content.substring(9)}&APPID=19d1c47951a0cc61493dff1dc863e430`)
+   requests(`http://api.openweathermap.org/data/2.5/weather?q=${message.content.substring(9)}&APPID=YOUR ID HERE`)
    .on('data', function (chunk) {
     const apiData = JSON.parse(chunk);
    
